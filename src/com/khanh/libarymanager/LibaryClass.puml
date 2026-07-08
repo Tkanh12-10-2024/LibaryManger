@@ -1,0 +1,22 @@
+@startuml
+class book {
+    +id: int
+    +nameBook: string
+    +author: string
+    +price: flaot
+    +quantity: int
+    +addBoook()
+    +deleteBook()
+    +updateBook()
+    +searchBoook()
+    +allBook()
+}
+class Author {
+    +id: int
+    +name: int
+    +birdthay: string
+    +email: string
+    + phone: string
+    +searchAuthor()
+}
+@enduml
