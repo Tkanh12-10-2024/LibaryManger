@@ -14,9 +14,37 @@ class book {
 class Author {
     +id: int
     +name: int
-    +birdthay: string
+    +birdthay: date
     +email: string
     + phone: string
     +searchAuthor()
+}
+class Reader {
+    +id: int
+    +name: string
+    +email: string
+    +phone: string
+    +acount: string
+    +password: string
+    +birdthay: string
+}
+class publisher {
+    +id: int
+    +name: string
+    +email: string
+    +phone: string
+    +address: string
+}
+class Staff {
+    +id: int
+    +name: string
+    +email: string
+    +phone: string
+    +salary: float
+}
+class Borrow {
+ +idReader: int
+ +idBook: int
+ +browingDay: Date
 }
 @enduml
