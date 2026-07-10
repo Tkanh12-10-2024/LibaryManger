@@ -39,6 +39,7 @@ class Staff {
     +email: string
     +phone: string
     +salary: float
+
 }
 class Borrow {
  +idReader: int
@@ -53,5 +54,6 @@ class acount {
 }
 class regulations {
     +regulations: list
+    +nameregualtion:string
 }
 @enduml
