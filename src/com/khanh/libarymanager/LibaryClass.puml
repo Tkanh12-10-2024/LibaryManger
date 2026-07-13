@@ -1,30 +1,35 @@
 @startuml
 class book {
-    +id: int
+    +id: long
+    +ISBN: string
     +nameBook: string
+    +descriotion: string
     +author: string
-    +price: float
-    +quantity: int
-    +addBoook()
-    +deleteBook()
-    +updateBook()
-    +searchBoook()
-    +allBook()
+    +price: bigDecimal
+    +totalQantity: int
+    +status: bookStatus
+
+    +createAt: LocalDateTime
+    +updateAt: LocalDateTime
 }
 class Author {
-    +id: int
+    +id: long
     +name: int
-    +birdthay: date
+    +biography: string
     +email: string
-    + phone: string
-    +searchAuthor()
+    +phone: string
+    +createAt: LocalDateTime
+    +updateAt: LocalDateTime
 }
 class Reader {
     +id: int
-    +name: string
+    user: string
+    password: string
+    +fullname: string
     +email: string
     +phone: string
-    +birdthay: string
+    createAt: LocalDateTime
+    UpdateAt: LocalDateTime
 }
 class publisher {
     +id: int
@@ -41,19 +46,18 @@ class Staff {
     +salary: float
 
 }
-class Borrow {
+class BorrowSlip {
  +idReader: int
  +idBook: int
  +browingDay: Date
 }
-class acount {
-    +id: int
-    +username: string
-    +password: string
-    +status: int
-}
+
 class regulations {
     +regulations: list
     +nameregualtion:string
+}
+
+class return {
+
 }
 @enduml
