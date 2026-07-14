@@ -33,7 +33,7 @@ class Reader {
     +updateAt: LocalDateTime
 }
 class publisher {
-    +id: int
+    +id: long
     +name: string
     +email: string
     +phone: string
