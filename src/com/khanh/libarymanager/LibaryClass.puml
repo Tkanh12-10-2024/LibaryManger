@@ -3,10 +3,11 @@ class book {
     +id: long
     +ISBN: string
     +nameBook: string
-    +descriotion: string
     +author: string
     +price: bigDecimal
+
     +totalQantity: int
+    +descriotion: string
     +status: bookStatus
 
     +createAt: LocalDateTime
@@ -28,8 +29,8 @@ class Reader {
     +fullname: string
     +email: string
     +phone: string
-    createAt: LocalDateTime
-    UpdateAt: LocalDateTime
+    +createAt: LocalDateTime
+    +updateAt: LocalDateTime
 }
 class publisher {
     +id: int
@@ -47,17 +48,22 @@ class Staff {
 
 }
 class BorrowSlip {
- +idReader: int
- +idBook: int
- +browingDay: Date
+ +id: long
+ +borrowDay: localDate
+ +dueDate: localDate
+ +return: localDate
+ +status: borrowStatus
+ +note: string
+
 }
 
-class regulations {
-    +regulations: list
-    +nameregualtion:string
-}
 
-class return {
-
+class borrowDetail {
+ +id: long
+ +quantity: int
+ +borrowCondition: string
+ +returnCondition: string
+ +fineAmount: string
+ +note: string
 }
 @enduml
