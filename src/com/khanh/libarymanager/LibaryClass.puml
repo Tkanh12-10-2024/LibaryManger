@@ -1,5 +1,5 @@
 @startuml
-class book {
+class Book {
     +id: long
     +ISBN: string
     +nameBook: string
@@ -32,7 +32,7 @@ class Reader {
     +createAt: LocalDateTime
     +updateAt: LocalDateTime
 }
-class publisher {
+class Publisher {
     +id: long
     +name: string
     +email: string
@@ -58,12 +58,30 @@ class BorrowSlip {
 }
 
 
-class borrowDetail {
+class BorrowDetail {
  +id: long
  +quantity: int
  +borrowCondition: string
  +returnCondition: string
  +fineAmount: string
  +note: string
+}
+
+class Role {
+    +id: long
+    +name: string
+    +description: string
+}
+
+enum BookStatus {
+    available
+    out_of_stock
+    discontinued
+}
+
+enum UserStatus  {
+    active
+    inAtive
+
 }
 @enduml
