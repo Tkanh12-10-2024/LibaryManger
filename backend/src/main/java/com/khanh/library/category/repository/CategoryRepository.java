@@ -1,4 +1,4 @@
-package main.java.com.khanh.library.category.repository;
+package com.khanh.library.category.repository;
 
 import com.khanh.library.category.entity.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
